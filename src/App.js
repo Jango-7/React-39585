@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// import {Noticias} from "./components/Noticias";
+import {Presentacion} from "./components/Presentacion";
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h4>Johan García</h4>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <h2>Hola Mundo</h2>
+      <hr />
+      {/* <Noticias /> */}
+
+      <Presentacion nombre ='Johan Garcia' rol='Musico' edad={30} />
+      <Presentacion nombre ='Diana Gallego' rol='Medica' edad={38} />
+      <Presentacion nombre ='Alejandro Gallego' rol='Abogado' edad={30} />
+
+    
     </div>
   );
 }
