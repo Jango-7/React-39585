@@ -1,6 +1,6 @@
-import { Tutores } from "./Tutores"
 
-export const Noticias = () => {
+export const Noticias = ({ children }) => {
+    // console.log(props)
     // -- Para facilitar la sintaxis, abro parentesis en el return, asi facilito la legibilidad
     return (
 
@@ -8,11 +8,9 @@ export const Noticias = () => {
 
             <h4>Noticias de hoy</h4>
             <hr />
-            <p>Lorem ipsum etc...</p>
-
+            {children}
             <div>
-                Esto es un div
-                <Tutores />
+                Esto es un div, debajo del children.
             </div>
 
         </section>
